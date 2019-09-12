@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f217888-39aa-4c01-849a-08183f39a163" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../PyUserInputDemo/Source.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/AutoPackageForiOS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutoPackageForiOS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MySql/Source.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="172" column="20" lean-forward="true" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
+            <state relative-caret-position="182">
+              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -30,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+            <state relative-caret-position="238">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="e#43#53#0" expanded="true" />
               </folding>
@@ -70,6 +66,9 @@
       <find>qRegisterMetaType</find>
       <find>updateText</find>
       <find>QMetaType</find>
+      <find>clean</find>
+      <find>AutoPackage</find>
+      <find>upload</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -97,6 +96,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -108,7 +108,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UI">
+  <component name="RunManager" selected="Python.Source">
     <configuration name="Source" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AutoPackageForiOS" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -181,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.UI" />
         <item itemvalue="Python.Source" />
+        <item itemvalue="Python.UI" />
       </list>
     </recent_temporary>
   </component>
@@ -201,21 +200,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="6" y="23" width="1848" height="981" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.393134" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39756367" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49833888" weight="0.19797525" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.63067555" visible="true" weight="0.35883015" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.63067555" weight="0.22834645" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4994463" weight="0.3295838" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.36932448" side_tool="true" visible="true" weight="0.35883015" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.36932448" side_tool="true" weight="0.35883015" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.22384702" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -382,22 +380,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source.py">
+    <entry file="file://$PROJECT_DIR$/UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="172" column="20" lean-forward="true" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="20" />
+        <state relative-caret-position="238">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
           <folding>
-            <element signature="e#43#52#0" expanded="true" />
+            <element signature="e#43#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI.py">
+    <entry file="file://$PROJECT_DIR$/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="68" column="27" lean-forward="true" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        <state relative-caret-position="182">
+          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
           <folding>
-            <element signature="e#43#53#0" expanded="true" />
+            <element signature="e#43#52#0" expanded="true" />
           </folding>
         </state>
       </provider>

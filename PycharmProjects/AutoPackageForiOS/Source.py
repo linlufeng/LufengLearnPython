@@ -46,21 +46,36 @@ class MyThread(QThread):
 class AutoArchive(MyThread):
     """自动打包并上传到蒲公英,发邮件通知"""
 
-    def __init__(self, autoPackage : AutoPackage, project_name = 'ScreenshotForAd',
+    # def __init__(self, autoPackage : AutoPackage, project_name = 'ScreenshotForAd',
+    #              archive_workspace_path = '/Users/lufenglin/Documents/git/ScreenshotForAd/ScreenshotForAd',
+    #              ipa_download_url = 'https://www.pgyer.com/Yyu9',
+    #              user_key = 'b15b89c376d2f3006a7275ad04291aa6',
+    #              api_key = '457cd58d02fbf94a0d4e0878c8fc3887',
+    #              description = ''):
+    #     super().__init__()
+    #     self.autoPackage = weakref.proxy(autoPackage)
+    #     self.project_name = project_name
+    #     self.archive_workspace_path = archive_workspace_path
+    #     self.export_directory = 'archive'
+    #     self.ipa_download_url = ipa_download_url
+    #     self.user_key =  user_key
+    #     self.api_key = api_key
+    #     self.description = '优化app版本截图样式，刷新资讯列表！请前往更新'
+
+    def __init__(self, project_name = 'ScreenshotForAd',
                  archive_workspace_path = '/Users/lufenglin/Documents/git/ScreenshotForAd/ScreenshotForAd',
                  ipa_download_url = 'https://www.pgyer.com/Yyu9',
                  user_key = 'b15b89c376d2f3006a7275ad04291aa6',
                  api_key = '457cd58d02fbf94a0d4e0878c8fc3887',
                  description = ''):
         super().__init__()
-        self.autoPackage = weakref.proxy(autoPackage)
         self.project_name = project_name
         self.archive_workspace_path = archive_workspace_path
         self.export_directory = 'archive'
         self.ipa_download_url = ipa_download_url
         self.user_key =  user_key
         self.api_key = api_key
-        self.description = description
+        self.description = '优化app版本截图样式，刷新资讯列表！请前往更新'
 
     def run(self):
         self.clean()
@@ -149,7 +164,6 @@ class AutoArchive(MyThread):
 
     def upload(self, ipa_path):
         self.archiveLog("\n\n===========开始上传蒲公英操作===========")
-        return
         if ipa_path:
             # https://www.pgyer.com/doc/api 具体参数大家可以进去里面查看,
             url = 'http://www.pgyer.com/apiv1/app/upload'
@@ -170,8 +184,8 @@ class AutoArchive(MyThread):
             return
 
     def archiveLog(self, str: object) -> object:
-        # print(str)
-        self.autoPackage.showLog(str)
+        print(str)
+        # self.autoPackage.showLog(str)
 
     @staticmethod
     def open_browser(self):
@@ -193,7 +207,7 @@ class AutoArchive(MyThread):
                        +
                        '下载地址\n' + self.ipa_download_url, 'html', 'utf-8')
         msg['From'] = self._format_address(self, 'iOS开发团队 <%s>' % from_address)
-        msg['Subject'] = Header(self.project_name+'新版版本已经发布.', 'utf-8').encode()
+        msg['Subject'] = Header(self.project_name+'新版本已经发布.', 'utf-8').encode()
         server = smtplib.SMTP(smtp_server, 25)  # SMTP协议默认端口是25
         server.set_debuglevel(1)
         server.login(from_address, password)
@@ -201,7 +215,7 @@ class AutoArchive(MyThread):
         server.quit()
         self.archiveLog("===========邮件发送成功===========")
 
-# if __name__ == '__main__':
-#     description = input("请输入内容:")
-#     archive = AutoArchive()
-#     archive.clean()
+if __name__ == '__main__':
+    # description = input("请输入内容:")
+    archive = AutoArchive()
+    archive.clean()
