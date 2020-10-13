@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f217888-39aa-4c01-849a-08183f39a163" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MySql/Source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DouyinDownload/Source2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DouyinDownload/Source3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DouyinDownload/source.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlayWXPY/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlayWXPY/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PlayWXPY/source.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source.py" beforeDir="false" afterPath="$PROJECT_DIR$/Source.py" afterDir="false" />
     </list>
@@ -17,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+            <state relative-caret-position="202">
+              <caret line="185" column="18" lean-forward="true" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
               <folding>
                 <element signature="e#43#52#0" expanded="true" />
               </folding>
@@ -29,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="90">
               <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
               <folding>
                 <element signature="e#43#53#0" expanded="true" />
@@ -51,13 +56,10 @@
     <findStrings>
       <find>smtplib</find>
       <find>ExportOptions</find>
-      <find>export_directory</find>
-      <find>archive_workspace_path</find>
       <find>AutoArchive</find>
       <find>to_address</find>
       <find>QSize</find>
       <find>USER_KEY</find>
-      <find>description</find>
       <find>print</find>
       <find>subprocess</find>
       <find>QTextCursor_MoveOperation</find>
@@ -69,6 +71,9 @@
       <find>clean</find>
       <find>AutoPackage</find>
       <find>upload</find>
+      <find>description</find>
+      <find>archive_workspace_path</find>
+      <find>export_directory</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,8 +88,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="6" />
-    <option name="y" value="23" />
+    <option name="x" value="72" />
+    <option name="y" value="28" />
     <option name="width" value="1848" />
     <option name="height" value="981" />
   </component>
@@ -96,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -108,6 +112,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,15 +204,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="6" y="23" width="1848" height="981" extended-state="0" />
+    <frame x="72" y="28" width="1848" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.39756367" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2414175" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49833888" weight="0.19797525" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.63067555" weight="0.22834645" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.63067555" weight="0.30821148" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -380,22 +386,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI.py">
+    <entry file="file://$PROJECT_DIR$/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
+        <state relative-caret-position="202">
+          <caret line="185" column="18" lean-forward="true" selection-start-line="185" selection-start-column="18" selection-end-line="185" selection-end-column="18" />
           <folding>
-            <element signature="e#43#53#0" expanded="true" />
+            <element signature="e#43#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Source.py">
+    <entry file="file://$PROJECT_DIR$/UI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="90">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="17" />
           <folding>
-            <element signature="e#43#52#0" expanded="true" />
+            <element signature="e#43#53#0" expanded="true" />
           </folding>
         </state>
       </provider>

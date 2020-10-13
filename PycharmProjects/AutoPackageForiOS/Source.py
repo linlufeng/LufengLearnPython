@@ -15,6 +15,7 @@ from email.utils import parseaddr, formataddr
 from UI import *
 import weakref
 from PyQt5.QtCore import QThread
+import time
 import threading
 import _thread
 import string
@@ -30,7 +31,8 @@ import string
 
 from_address = '8912462@qq.com'    # 发送人的地址
 password = 'ujauupesnfwxcbcj'  # 邮箱密码换成他提供的16位授权码
-to_address = ['8912462@qq.com']    # 收件人地址,可以是多个的
+to_address = ['lufeng.lin@nfyg.com.cn', 'hexn@nfyg.com.cn', 'yuan.lu@nfyg.com.cn', 'xiaolu.zeng@nfyg.com.cn']    # 收件人地址,可以是多个的
+# to_address = ['lufeng.lin@nfyg.com.cn']
 smtp_server = 'smtp.qq.com'    # 因为我是使用QQ邮箱..
 
 
@@ -64,7 +66,7 @@ class AutoArchive(MyThread):
 
     def __init__(self, project_name = 'ScreenshotForAd',
                  archive_workspace_path = '/Users/lufenglin/Documents/git/ScreenshotForAd/ScreenshotForAd',
-                 ipa_download_url = 'https://www.pgyer.com/Yyu9',
+                 ipa_download_url = 'https://www.pgyer.com/wl9Z',
                  user_key = 'b15b89c376d2f3006a7275ad04291aa6',
                  api_key = '457cd58d02fbf94a0d4e0878c8fc3887',
                  description = ''):
@@ -75,7 +77,7 @@ class AutoArchive(MyThread):
         self.ipa_download_url = ipa_download_url
         self.user_key =  user_key
         self.api_key = api_key
-        self.description = '优化app版本截图样式，刷新资讯列表！请前往更新'
+        self.description = '禁用iOS13深色模式！请前往更新'
 
     def run(self):
         self.clean()
@@ -199,7 +201,7 @@ class AutoArchive(MyThread):
     def send_email(self):
         # https://www.pgyer.com/XXX app地址
         # 只是单纯的发了一个文本邮箱,具体的发附件和图片大家可以自己去补充
-        msg = MIMEText('Hello'
+        msg = MIMEText(self.description
                        +
                        '应用已更新,请下载测试\n'
                        +
